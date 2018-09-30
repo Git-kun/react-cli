@@ -1,14 +1,16 @@
 <!DOCTYPE html>
-<html lang="zh-cmn-Hans">
+<html lang="zh-cmn-Hans" >
+<head >
+  <meta charset="UTF-8" >
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" >
+</head >
+<body >
+<div id="app" ></div >
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Webpack App</title>
-</head>
+<!--config2 配置使用-->
+<script type="text/javascript" src="./public/dll/<%= htmlWebpackPlugin.options.vendorJsName %>" ></script>
 
-<body>
-    <div id="app"></div>
-</body>
-
-</html>
+<!--将babel-bplyfill排除后使用-->
+<!--<script src="//cdn.bootcss.com/babel-polyfill/7.0.0-alpha.15/polyfill.min.js"/>-->
+</body >
+</html >
