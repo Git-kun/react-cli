@@ -3,6 +3,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const path = require('path');
 const bundleConfig = require( "./bundle-config.json" );
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
 	output: {
@@ -28,6 +29,11 @@ module.exports = {
 			context: __dirname,
 			manifest: require( './manifest.json' ),
 		} ),
+		new CopyWebpackPlugin([{
+			from: path.resolve(__dirname, "../public"),
+			to: path.resolve(__dirname, "../dist/public"),
+			ignore: ['favicon.ico', 'index.html']
+		}]),
 		new HtmlWebpackPlugin({
 			vendorJsName: bundleConfig.vendor.js,
 			favicon:path.resolve(__dirname, '../public/favicon.ico'),
