@@ -51,7 +51,7 @@ module.exports = {
 				loader: 'file-loader',
 				options: {
 					limit: 10000,
-					name:  path.resolve(__dirname, '../public/img/[name].[ext]')
+					name: '../public/img/[name].[ext]'
 				}
 			},
 			{
@@ -59,7 +59,7 @@ module.exports = {
 				loader: 'url-loader',
 				options: {
 					limit: 10000,
-					name: path.resolve(__dirname, '../public/img/[name].[ext]')
+					name:  '../public/img/[name].[ext]'
 				}
 			}
 		]
