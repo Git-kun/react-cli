@@ -5,6 +5,7 @@
     "noImplicitAny": false,
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,
+    "declaration": true,
     "allowSyntheticDefaultImports": true,
     "module": "commonjs",
     "jsx": "react",
