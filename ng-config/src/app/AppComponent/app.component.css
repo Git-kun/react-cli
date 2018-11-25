@@ -1,0 +1,6 @@
+.container {
+    flex: 1;
+    display: flex;
+    height: calc(100% - var(--header-height) - var(--footer-height));
+    width: 100%;
+}

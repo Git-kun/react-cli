@@ -1,6 +1,4 @@
-### webpack 关于 react + typescript 的一些配置
-
-*有些奇怪的现象, 还要测试*
+### 关于 webpack 的一些配置 (都差不多)
 
 需要全局安装 `cross-env`
 

@@ -1,0 +1,366 @@
+{
+  "errors": [
+    ": 'hk-slider' is not a known element:\n1. If 'hk-slider' is an Angular component, then verify that it is part of this module.\n2. If 'hk-slider' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message. (\"=\"../../../assets/img/userName.jpg\" class=\"music-cover\" />\n    <div class=\"music-progress\">\n        [ERROR ->]<hk-slider id=\"play-progress\"></hk-slider>\n    </div>\n    <div class=\"time\">\n\")\n: Can't bind to 'height' since it isn't a known property of 'hk-slider'.\n1. If 'hk-slider' is an Angular component and it has 'height' input, then verify that it is part of this module.\n2. If 'hk-slider' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.\n3. To allow any property add 'NO_ERRORS_SCHEMA' to the '@NgModule.schemas' of this component. (\"\n    </span>\n    <div class=\"voice-progress\">\n        <hk-slider id=\"voice-size\" [ERROR ->][height]=\"4\" [progress]=\"100\" [sliderSize]=\"12\" [hiddenDot]=\"true\">\n        </hk-slider>\n    </div>\n\")\n: Can't bind to 'progress' since it isn't a known property of 'hk-slider'.\n1. If 'hk-slider' is an Angular component and it has 'progress' input, then verify that it is part of this module.\n2. If 'hk-slider' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.\n3. To allow any property add 'NO_ERRORS_SCHEMA' to the '@NgModule.schemas' of this component. (\"\n    </span>\n    <div class=\"voice-progress\">\n        <hk-slider id=\"voice-size\" [height]=\"4\" [ERROR ->][progress]=\"100\" [sliderSize]=\"12\" [hiddenDot]=\"true\">\n        </hk-slider>\n    </div>\n\")\n: Can't bind to 'sliderSize' since it isn't a known property of 'hk-slider'.\n1. If 'hk-slider' is an Angular component and it has 'sliderSize' input, then verify that it is part of this module.\n2. If 'hk-slider' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.\n3. To allow any property add 'NO_ERRORS_SCHEMA' to the '@NgModule.schemas' of this component. (\">\n    <div class=\"voice-progress\">\n        <hk-slider id=\"voice-size\" [height]=\"4\" [progress]=\"100\" [ERROR ->][sliderSize]=\"12\" [hiddenDot]=\"true\">\n        </hk-slider>\n    </div>\n\")\n: Can't bind to 'hiddenDot' since it isn't a known property of 'hk-slider'.\n1. If 'hk-slider' is an Angular component and it has 'hiddenDot' input, then verify that it is part of this module.\n2. If 'hk-slider' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.\n3. To allow any property add 'NO_ERRORS_SCHEMA' to the '@NgModule.schemas' of this component. (\"voice-progress\">\n        <hk-slider id=\"voice-size\" [height]=\"4\" [progress]=\"100\" [sliderSize]=\"12\" [ERROR ->][hiddenDot]=\"true\">\n        </hk-slider>\n    </div>\n\")\n: 'hk-slider' is not a known element:\n1. If 'hk-slider' is an Angular component, then verify that it is part of this module.\n2. If 'hk-slider' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message. (\"\n    </span>\n    <div class=\"voice-progress\">\n        [ERROR ->]<hk-slider id=\"voice-size\" [height]=\"4\" [progress]=\"100\" [sliderSize]=\"12\" [hiddenDot]=\"true\">\n      \")\nsrc/app/AppComponent/app.component.spec.ts(3,1): error TS2582: Cannot find name 'describe'. Do you need to install type definitions for a test runner? Try `npm i @types/jest` or `npm i @types/mocha`.\nsrc/app/AppComponent/app.component.spec.ts(4,3): error TS2304: Cannot find name 'beforeEach'.\nsrc/app/AppComponent/app.component.spec.ts(11,3): error TS2582: Cannot find name 'it'. Do you need to install type definitions for a test runner? Try `npm i @types/jest` or `npm i @types/mocha`.\nsrc/app/AppComponent/app.component.spec.ts(14,5): error TS2304: Cannot find name 'expect'.\nsrc/app/AppComponent/app.component.spec.ts(16,3): error TS2582: Cannot find name 'it'. Do you need to install type definitions for a test runner? Try `npm i @types/jest` or `npm i @types/mocha`.\nsrc/app/AppComponent/app.component.spec.ts(19,5): error TS2304: Cannot find name 'expect'.\nsrc/app/AppComponent/app.component.spec.ts(21,3): error TS2582: Cannot find name 'it'. Do you need to install type definitions for a test runner? Try `npm i @types/jest` or `npm i @types/mocha`.\nsrc/app/AppComponent/app.component.spec.ts(25,5): error TS2304: Cannot find name 'expect'.\nsrc/app/core/core.module.spec.ts(3,1): error TS2582: Cannot find name 'describe'. Do you need to install type definitions for a test runner? Try `npm i @types/jest` or `npm i @types/mocha`.\nsrc/app/core/core.module.spec.ts(6,3): error TS2304: Cannot find name 'beforeEach'.\nsrc/app/core/core.module.spec.ts(10,3): error TS2582: Cannot find name 'it'. Do you need to install type definitions for a test runner? Try `npm i @types/jest` or `npm i @types/mocha`.\nsrc/app/core/core.module.spec.ts(11,5): error TS2304: Cannot find name 'expect'.\nsrc/app/core/footer/footer.component.spec.ts(5,1): error TS2582: Cannot find name 'describe'. Do you need to install type definitions for a test runner? Try `npm i @types/jest` or `npm i @types/mocha`.\nsrc/app/core/footer/footer.component.spec.ts(9,3): error TS2304: Cannot find name 'beforeEach'.\nsrc/app/core/footer/footer.component.spec.ts(16,3): error TS2304: Cannot find name 'beforeEach'.\nsrc/app/core/footer/footer.component.spec.ts(22,3): error TS2582: Cannot find name 'it'. Do you need to install type definitions for a test runner? Try `npm i @types/jest` or `npm i @types/mocha`.\nsrc/app/core/footer/footer.component.spec.ts(23,5): error TS2304: Cannot find name 'expect'.\nsrc/app/core/header/header.component.spec.ts(5,1): error TS2582: Cannot find name 'describe'. Do you need to install type definitions for a test runner? Try `npm i @types/jest` or `npm i @types/mocha`.\nsrc/app/core/header/header.component.spec.ts(9,3): error TS2304: Cannot find name 'beforeEach'.\nsrc/app/core/header/header.component.spec.ts(16,3): error TS2304: Cannot find name 'beforeEach'.\nsrc/app/core/header/header.component.spec.ts(22,3): error TS2582: Cannot find name 'it'. Do you need to install type definitions for a test runner? Try `npm i @types/jest` or `npm i @types/mocha`.\nsrc/app/core/header/header.component.spec.ts(23,5): error TS2304: Cannot find name 'expect'.\nsrc/app/core/sider/sider.component.spec.ts(5,1): error TS2582: Cannot find name 'describe'. Do you need to install type definitions for a test runner? Try `npm i @types/jest` or `npm i @types/mocha`.\nsrc/app/core/sider/sider.component.spec.ts(9,3): error TS2304: Cannot find name 'beforeEach'.\nsrc/app/core/sider/sider.component.spec.ts(16,3): error TS2304: Cannot find name 'beforeEach'.\nsrc/app/core/sider/sider.component.spec.ts(22,3): error TS2582: Cannot find name 'it'. Do you need to install type definitions for a test runner? Try `npm i @types/jest` or `npm i @types/mocha`.\nsrc/app/core/sider/sider.component.spec.ts(23,5): error TS2304: Cannot find name 'expect'.\n"
+  ],
+  "warnings": [],
+  "version": "4.25.1",
+  "hash": "d54d977d6e3b6f4686fa",
+  "time": 6184,
+  "builtAt": 1542985100410,
+  "publicPath": "",
+  "outputPath": "/Users/hukun/文件/Project/webpack-config/ng-config/dist",
+  "assetsByChunkName": {
+    "app": [
+      "app.js",
+      "app.js.map"
+    ]
+  },
+  "assets": [
+    {
+      "name": "app.js",
+      "size": 992,
+      "chunks": [
+        0
+      ],
+      "chunkNames": [
+        "app"
+      ]
+    },
+    {
+      "name": "app.js.map",
+      "size": 4511,
+      "chunks": [
+        0
+      ],
+      "chunkNames": [
+        "app"
+      ]
+    }
+  ],
+  "filteredAssets": 0,
+  "entrypoints": {
+    "app": {
+      "chunks": [
+        0
+      ],
+      "assets": [
+        "app.js",
+        "app.js.map"
+      ],
+      "children": {},
+      "childAssets": {}
+    }
+  },
+  "namedChunkGroups": {
+    "app": {
+      "chunks": [
+        0
+      ],
+      "assets": [
+        "app.js",
+        "app.js.map"
+      ],
+      "children": {},
+      "childAssets": {}
+    }
+  },
+  "chunks": [
+    {
+      "id": 0,
+      "rendered": true,
+      "initial": true,
+      "entry": true,
+      "size": 0,
+      "names": [
+        "app"
+      ],
+      "files": [
+        "app.js",
+        "app.js.map"
+      ],
+      "hash": "cfbcbf6bb01c85772bab",
+      "siblings": [],
+      "parents": [],
+      "children": [],
+      "childrenByOrder": {},
+      "modules": [
+        {
+          "id": "./src/main.ts",
+          "identifier": "/Users/hukun/文件/Project/webpack-config/ng-config/node_modules/@ngtools/webpack/src/index.js!/Users/hukun/文件/Project/webpack-config/ng-config/src/main.ts",
+          "name": "./src/main.ts",
+          "index": 0,
+          "index2": 0,
+          "size": 0,
+          "cacheable": true,
+          "built": true,
+          "optional": false,
+          "prefetched": false,
+          "chunks": [
+            0
+          ],
+          "issuer": null,
+          "issuerId": null,
+          "issuerName": null,
+          "issuerPath": null,
+          "profile": {
+            "factory": 6101,
+            "building": 8
+          },
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "assets": [],
+          "reasons": [
+            {
+              "moduleId": null,
+              "moduleIdentifier": null,
+              "module": null,
+              "moduleName": null,
+              "type": "single entry",
+              "userRequest": "/Users/hukun/文件/Project/webpack-config/ng-config/src/main.ts",
+              "loc": "app"
+            }
+          ],
+          "usedExports": true,
+          "providedExports": null,
+          "optimizationBailout": [
+            "ModuleConcatenation bailout: Module is not an ECMAScript module",
+            "ModuleConcatenation bailout: Module is not an ECMAScript module"
+          ],
+          "depth": 0,
+          "source": ""
+        }
+      ],
+      "filteredModules": 0,
+      "origins": [
+        {
+          "module": "",
+          "moduleIdentifier": "",
+          "moduleName": "",
+          "loc": "app",
+          "request": "/Users/hukun/文件/Project/webpack-config/ng-config/src/main.ts",
+          "reasons": []
+        }
+      ]
+    }
+  ],
+  "modules": [
+    {
+      "id": "./src/main.ts",
+      "identifier": "/Users/hukun/文件/Project/webpack-config/ng-config/node_modules/@ngtools/webpack/src/index.js!/Users/hukun/文件/Project/webpack-config/ng-config/src/main.ts",
+      "name": "./src/main.ts",
+      "index": 0,
+      "index2": 0,
+      "size": 0,
+      "cacheable": true,
+      "built": true,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [
+        0
+      ],
+      "issuer": null,
+      "issuerId": null,
+      "issuerName": null,
+      "issuerPath": null,
+      "profile": {
+        "factory": 6101,
+        "building": 8
+      },
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "assets": [],
+      "reasons": [
+        {
+          "moduleId": null,
+          "moduleIdentifier": null,
+          "module": null,
+          "moduleName": null,
+          "type": "single entry",
+          "userRequest": "/Users/hukun/文件/Project/webpack-config/ng-config/src/main.ts",
+          "loc": "app"
+        }
+      ],
+      "usedExports": true,
+      "providedExports": null,
+      "optimizationBailout": [
+        "ModuleConcatenation bailout: Module is not an ECMAScript module",
+        "ModuleConcatenation bailout: Module is not an ECMAScript module"
+      ],
+      "depth": 0,
+      "source": ""
+    }
+  ],
+  "filteredModules": 0,
+  "children": [
+    {
+      "errors": [],
+      "warnings": [],
+      "publicPath": "",
+      "outputPath": "/Users/hukun/文件/Project/webpack-config/ng-config/dist",
+      "assetsByChunkName": {},
+      "assets": [
+        {
+          "name": "index.html",
+          "size": 4392,
+          "chunks": [
+            0
+          ],
+          "chunkNames": []
+        }
+      ],
+      "filteredAssets": 0,
+      "entrypoints": {
+        "undefined": {
+          "chunks": [
+            0
+          ],
+          "assets": [
+            "index.html"
+          ],
+          "children": {},
+          "childAssets": {}
+        }
+      },
+      "namedChunkGroups": {
+        "undefined": {
+          "chunks": [
+            0
+          ],
+          "assets": [
+            "index.html"
+          ],
+          "children": {},
+          "childAssets": {}
+        }
+      },
+      "chunks": [
+        {
+          "id": 0,
+          "rendered": true,
+          "initial": true,
+          "entry": true,
+          "size": 558,
+          "names": [],
+          "files": [
+            "index.html"
+          ],
+          "hash": "8d4b67961e286bde3194",
+          "siblings": [],
+          "parents": [],
+          "children": [],
+          "childrenByOrder": {},
+          "modules": [
+            {
+              "id": "./node_modules/html-webpack-plugin/lib/loader.js!./public/index.html",
+              "identifier": "/Users/hukun/文件/Project/webpack-config/ng-config/node_modules/html-webpack-plugin/lib/loader.js!/Users/hukun/文件/Project/webpack-config/ng-config/node_modules/raw-loader/index.js!/Users/hukun/文件/Project/webpack-config/ng-config/public/index.html",
+              "name": "./node_modules/html-webpack-plugin/lib/loader.js!./public/index.html",
+              "index": 0,
+              "index2": 0,
+              "size": 558,
+              "cacheable": true,
+              "built": true,
+              "optional": false,
+              "prefetched": false,
+              "chunks": [
+                0
+              ],
+              "issuer": null,
+              "issuerId": null,
+              "issuerName": null,
+              "issuerPath": null,
+              "profile": {
+                "factory": 2766,
+                "building": 5
+              },
+              "failed": false,
+              "errors": 0,
+              "warnings": 0,
+              "assets": [],
+              "reasons": [
+                {
+                  "moduleId": null,
+                  "moduleIdentifier": null,
+                  "module": null,
+                  "moduleName": null,
+                  "type": "single entry",
+                  "userRequest": "/Users/hukun/文件/Project/webpack-config/ng-config/node_modules/html-webpack-plugin/lib/loader.js!/Users/hukun/文件/Project/webpack-config/ng-config/public/index.html"
+                }
+              ],
+              "usedExports": true,
+              "providedExports": null,
+              "optimizationBailout": [
+                "ModuleConcatenation bailout: Module is not an ECMAScript module",
+                "ModuleConcatenation bailout: Module is not an ECMAScript module"
+              ],
+              "depth": 0,
+              "source": "module.exports = \"<!doctype html>\\n<html lang=\\\"zh-Hans\\\">\\n\\n<head>\\n    <link href=\\\"https://fonts.googleapis.com/icon?family=Material+Icons\\\" rel=\\\"stylesheet\\\">\\n    <link href=\\\"https://fonts.googleapis.com/css?family=Roboto:300,400,500\\\" rel=\\\"stylesheet\\\">\\n    <meta charset=\\\"utf-8\\\">\\n    <title>Player</title>\\n    <base href=\\\"/\\\">\\n\\n    <meta name=\\\"viewport\\\" content=\\\"width=device-width, initial-scale=1\\\">\\n    <link rel=\\\"icon\\\" type=\\\"image/x-icon\\\" href=\\\"favicon.ico\\\">\\n</head>\\n\\n<body>\\n    <app-root></app-root>\\n</body>\\n\\n</html>\""
+            }
+          ],
+          "filteredModules": 0,
+          "origins": [
+            {
+              "module": "",
+              "moduleIdentifier": "",
+              "moduleName": "",
+              "loc": "",
+              "request": "/Users/hukun/文件/Project/webpack-config/ng-config/node_modules/html-webpack-plugin/lib/loader.js!/Users/hukun/文件/Project/webpack-config/ng-config/public/index.html",
+              "reasons": []
+            }
+          ]
+        }
+      ],
+      "modules": [
+        {
+          "id": "./node_modules/html-webpack-plugin/lib/loader.js!./public/index.html",
+          "identifier": "/Users/hukun/文件/Project/webpack-config/ng-config/node_modules/html-webpack-plugin/lib/loader.js!/Users/hukun/文件/Project/webpack-config/ng-config/node_modules/raw-loader/index.js!/Users/hukun/文件/Project/webpack-config/ng-config/public/index.html",
+          "name": "./node_modules/html-webpack-plugin/lib/loader.js!./public/index.html",
+          "index": 0,
+          "index2": 0,
+          "size": 558,
+          "cacheable": true,
+          "built": true,
+          "optional": false,
+          "prefetched": false,
+          "chunks": [
+            0
+          ],
+          "issuer": null,
+          "issuerId": null,
+          "issuerName": null,
+          "issuerPath": null,
+          "profile": {
+            "factory": 2766,
+            "building": 5
+          },
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "assets": [],
+          "reasons": [
+            {
+              "moduleId": null,
+              "moduleIdentifier": null,
+              "module": null,
+              "moduleName": null,
+              "type": "single entry",
+              "userRequest": "/Users/hukun/文件/Project/webpack-config/ng-config/node_modules/html-webpack-plugin/lib/loader.js!/Users/hukun/文件/Project/webpack-config/ng-config/public/index.html"
+            }
+          ],
+          "usedExports": true,
+          "providedExports": null,
+          "optimizationBailout": [
+            "ModuleConcatenation bailout: Module is not an ECMAScript module",
+            "ModuleConcatenation bailout: Module is not an ECMAScript module"
+          ],
+          "depth": 0,
+          "source": "module.exports = \"<!doctype html>\\n<html lang=\\\"zh-Hans\\\">\\n\\n<head>\\n    <link href=\\\"https://fonts.googleapis.com/icon?family=Material+Icons\\\" rel=\\\"stylesheet\\\">\\n    <link href=\\\"https://fonts.googleapis.com/css?family=Roboto:300,400,500\\\" rel=\\\"stylesheet\\\">\\n    <meta charset=\\\"utf-8\\\">\\n    <title>Player</title>\\n    <base href=\\\"/\\\">\\n\\n    <meta name=\\\"viewport\\\" content=\\\"width=device-width, initial-scale=1\\\">\\n    <link rel=\\\"icon\\\" type=\\\"image/x-icon\\\" href=\\\"favicon.ico\\\">\\n</head>\\n\\n<body>\\n    <app-root></app-root>\\n</body>\\n\\n</html>\""
+        }
+      ],
+      "filteredModules": 0,
+      "children": [],
+      "name": "html-webpack-plugin for \"index.html\""
+    }
+  ]
+}

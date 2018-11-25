@@ -1,0 +1,53 @@
+{
+    "name": "config",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "dev": "cross-env NODE_ENV=development webpack-dev-server",
+        "build": "cross-env NODE_ENV=production webpack  --profile --json > stats.json",
+        "dll": "cross-env NODE_ENV=production webpack  --config webpack.dll.config.js"
+    },
+    "browserslist": [
+        "Firefox > 20",
+        "iOS >= 7",
+        "ie >= 8",
+        "last 5 versions",
+        "> 5%"
+    ],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "@babel/core": "^7.1.6",
+        "@babel/plugin-proposal-decorators": "^7.1.6",
+        "@babel/preset-env": "^7.1.6",
+        "@babel/preset-react": "^7.0.0",
+        "@svgr/webpack": "^4.0.3",
+        "assets-webpack-plugin": "^3.9.7",
+        "autoprefixer": "^9.3.1",
+        "babel-loader": "^8.0.4",
+        "clean-webpack-plugin": "^1.0.0",
+        "compression-webpack-plugin": "^2.0.0",
+        "copy-webpack-plugin": "^4.6.0",
+        "css-loader": "^1.0.1",
+        "extract-text-webpack-plugin": "^4.0.0-beta.0",
+        "file-loader": "^2.0.0",
+        "happypack": "^5.0.0",
+        "html-webpack-plugin": "^3.2.0",
+        "mini-css-extract-plugin": "^0.4.5",
+        "postcss-loader": "^3.0.0",
+        "style-loader": "^0.23.1",
+        "url-loader": "^1.1.2",
+        "webpack": "^4.25.1",
+        "webpack-bundle-analyzer": "^3.0.3",
+        "webpack-cli": "^3.1.2",
+        "webpack-dev-server": "^3.1.10",
+        "webpack-merge": "^4.1.4"
+    },
+    "dependencies": {
+        "@babel/polyfill": "^7.0.0",
+        "fastclick": "^1.0.6",
+        "react": "^16.6.3",
+        "react-dom": "^16.6.3"
+    }
+}
