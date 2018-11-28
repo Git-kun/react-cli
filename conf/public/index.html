@@ -1,0 +1,34 @@
+<html lang="zh-Hans">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no">
+    <meta http-equiv="Cache-Control" content="no-siteapp">
+    <meta name="robots" content="index,follow">
+    <meta name="apple-mobile-web-app-title" content="标题">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="MobileOptimized" content="320">
+    <meta name="screen-orientation" content="portrait">
+    <meta name="x5-orientation" content="portrait">
+    <meta name="full-screen" content="yes">
+    <meta name="x5-fullscreen" content="true">
+    <meta name="browsermode" content="application">
+    <meta name="x5-page-mode" content="app">
+    <title>Document</title>
+
+    <% if (htmlWebpackPlugin.options.vendorCssName) { %>
+        <link rel="stylesheet" href="./public/dll/<%= htmlWebpackPlugin.options.vendorCssName %>">
+        <% } %>
+</head>
+
+<body>
+    <div id="root"></div>
+    <% if (htmlWebpackPlugin.options.vendorJsName) { %>
+        <script src="./public/dll/<%=htmlWebpackPlugin.options.vendorJsName %>"></script>
+        <% } %>
+</body>
+
+</html>

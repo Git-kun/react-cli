@@ -1,0 +1,3 @@
+@import '../node_modules/react-weui/build/packages/react-weui.css';
+@import './style/animation.css';
+@import '../node_modules/weui/dist/style/weui.min.css'
