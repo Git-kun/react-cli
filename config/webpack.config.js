@@ -4,8 +4,8 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ModuleConcatenationPlug = require('webpack/lib/optimize/ModuleConcatenationPlugin');
 
 // TODO:awesome-typescript-loader 配合 happypack 会报错,
-const HappyPack = require('happypack');
-const happyThreadPool = HappyPack.ThreadPool({ size: 5 });
+// const HappyPack = require('happypack');
+// const happyThreadPool = HappyPack.ThreadPool({ size: 5 });
 
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const CleanWebpackPlugin = require('clean-webpack-plugin');
@@ -74,16 +74,17 @@ const config = {
                 use: [
                     "awesome-typescript-loader"
                 ],
-                include: path.resolve(__dirname, 'src')
+                include: path.resolve(__dirname, 'src'),
+            },
+            {
+                test: /\.jsx?$/,
+                use: ['happypack/loader?id=jsx'],
+                include: path.resolve(__dirname, 'src'),
             },
             {
                 enforce: "pre",
                 test: /\.js$/,
                 loader: "source-map-loader"
-            },
-            {
-                test: /\.jsx?$/,
-                use: ['happypack/loader?id=jsx'],
             },
             {
                 test: /\.svg$/,
@@ -96,7 +97,9 @@ const config = {
                 options: {
                     limit: 10000,
                     name: './public/img/[name].[ext]'
-                }
+                },
+                include: path.resolve(__dirname, 'src'),
+
             },
             {
                 test: /\.(woff2?|eot|ttf|otf)(\?.*)?$/,
@@ -104,10 +107,11 @@ const config = {
                 options: {
                     limit: 10000,
                     name: './public/fonts/[name].[ext]'
-                }
+                },
+                include: path.resolve(__dirname, 'src'),
             },
             {
-                test: /\.css$/, // src 里面的 css 使用 css modules
+                test: /\.module\.css$/, // 使用 css modules
                 use: [MiniCssExtractPlugin.loader,
                     {
                         loader: 'css-loader',

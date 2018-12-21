@@ -7,7 +7,7 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const vendors = [
     path.resolve(__dirname, "./src/polyfills.ts"),
     path.resolve(__dirname, "./src/vendors.ts"),
-    path.resolve(__dirname, "./src/styles.css")
+    path.resolve(__dirname, "./public/style/styles.css")
 ]
 
 module.exports = {
@@ -22,29 +22,13 @@ module.exports = {
     mode: 'production',
     module: {
         rules: [{
-                test: /\.tsx?$/,
-                use: [
-                    "awesome-typescript-loader"
-                ],
-            },
-            {
-                enforce: "pre",
-                test: /\.js$/,
-                loader: "source-map-loader"
-            },
-            {
-                test: /\.jsx?$/,
-                use: ['happypack/loader?id=jsx'],
-            },
-            {
-                test: /\.css$/,
-                use: [
-                    MiniCssExtractPlugin.loader,
-                    "css-loader?minimize",
-                    'postcss-loader'
-                ]
-            }
-        ]
+            test: /\.css$/,
+            use: [
+                MiniCssExtractPlugin.loader,
+                "css-loader?minimize",
+                'postcss-loader'
+            ]
+        }]
     },
     plugins: [
 
@@ -54,11 +38,6 @@ module.exports = {
             path: __dirname + '/manifest.json',
             name: '[name]_[chunkhash]',
             context: __dirname,
-        }),
-        new HappyPack({
-            id: "jsx",
-            loaders: ['babel-loader'],
-            threadPool: happyThreadPool,
         }),
         new MiniCssExtractPlugin({
             filename: "[name].dll.[chunkhash].css",

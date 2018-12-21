@@ -3,7 +3,7 @@ import * as ReactDOM from "react-dom";
 import { BrowserRouter , Router} from 'react-router-dom'
 
 import { Routes } from "./routerTable";
-import { Navigation } from "./navigation";
+import { Navigation } from "./router";
 import history from "./history";
 
 ReactDOM.render(

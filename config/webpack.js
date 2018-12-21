@@ -79,6 +79,7 @@ const config = {
             {
                 test: /\.jsx?$/,
                 use: ['happypack/loader?id=jsx'],
+                include: path.resolve(__dirname, 'src'),
             },
             {
                 enforce: "pre",
@@ -96,7 +97,9 @@ const config = {
                 options: {
                     limit: 10000,
                     name: './public/img/[name].[ext]'
-                }
+                },
+                include: path.resolve(__dirname, 'src'),
+
             },
             {
                 test: /\.(woff2?|eot|ttf|otf)(\?.*)?$/,
@@ -104,28 +107,23 @@ const config = {
                 options: {
                     limit: 10000,
                     name: './public/fonts/[name].[ext]'
-                }
+                },
+                include: path.resolve(__dirname, 'src'),
+
             },
             {
-                test: /\.css$/,
-                // src 里面的 css 使用 css modules 并且排除 styles.css
+                test: /\.module\.css$/, // css modules
                 use: [MiniCssExtractPlugin.loader,
                     {
                         loader: 'css-loader',
                         options: {
                             modules: true,
-                            namedExport: true,
-                            camelCase: true,
                             minimize: true,
-                            localIdentName: "[local]_[hash:base64:5]"
                         }
                     },
                     'postcss-loader'
                 ],
-                include: path.resolve(__dirname, 'src'),
-                exclude: [
-                    path.resolve(__dirname, './src/styles.css')
-                ]
+                include: path.resolve(__dirname, 'src')
             },
             {
                 test: /\.css$/,
