@@ -1,7 +1,8 @@
 import "react";
 import 'react-dom';
 import 'react-router';
-
-import fastClick from 'fastclick';
-
-fastClick.attach(document.body);
+import 'react-router-dom';
+import 'mobx';
+import 'mobx-react';
+// import 'antd';
+import 'MD5';

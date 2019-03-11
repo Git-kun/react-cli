@@ -4,13 +4,20 @@
     "target": "es6",
     "module": "commonjs",
     "jsx": "react",
+    "preserveConstEnums": true,
     "allowJs": true,
     "sourceMap": true,
     "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "removeComments": false,
+    "suppressImplicitAnyIndexErrors": true,
     "lib": [
       "es2017",
       "dom",
       "es2017.object"
     ]
-  }
+  },
+  "include": [
+    "src/**/*"
+  ]
 }

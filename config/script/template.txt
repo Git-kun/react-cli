@@ -1,0 +1,11 @@
+import * as React from 'react';
+import * as styles from './index.module.css';
+
+export class {%ComponentName%} extends React.Component {
+  render() {
+      return (
+          <div className={styles.container}>
+          </div>
+      )
+  }
+}

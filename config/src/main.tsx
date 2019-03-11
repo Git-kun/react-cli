@@ -1,19 +1,16 @@
 import * as React from "react";
 import * as ReactDOM from "react-dom";
-import { BrowserRouter , Router} from 'react-router-dom'
 
-import { Routes } from "./routerTable";
-import { Navigation } from "./router";
-import history from "./history";
 
-ReactDOM.render(
-    (
-        <Router history={history}>
-            <>
-                <Routes />
-                <Navigation></Navigation>
-            </>
-        </Router>
-    ),
-    document.getElementById('root')
-);
+console.log( '当前环境: ' + process.env.NODE_ENV )
+
+const $root = document.getElementById( 'root' );
+
+async function start() {
+  // ReactDOM.render( <Loading/>, $root )
+  // TODO 一些初始化
+  // ReactDOM.unmountComponentAtNode( $root )
+  ReactDOM.render( <div></div>, $root )
+}
+
+start()

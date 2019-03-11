@@ -1,33 +1,43 @@
-添加 `--profile --json > stats.json` 输出 stats.json 文件
+### css module  需要使用  .module.css 后缀
 
-两个 webpack 配置
+## 目录结构  src
 
-1. 使用 dll
-2. 不使用 dll
+pureComponents  纯的组件, 不包含特定内容, 可随意使用 的组件  **应该维护一个 .md 描述文件**
+
+components      和业务有关的组件   **应该维护一个 .md 描述文件**
+
+assets     资源, 图标, 字体, 静态数据(纯粹的静态资源应该由服务器提供)等
+
+global     全局的状态,多语言,字典等, 数据, 任何组件都可拿到的  **单例**
+
+emnu      枚举
+
+router     页面 路由
+
+pages      页面 展开到二级菜单   父子级的页面 应该 嵌套在目录中
+
+layout     首页布局, header sider, footer 等
+
+service    api  ,  api 在这封装成方法, 统一维护  **应该维护一个 .md 描述文件**
+
+utils      工具函数, **新增时 应该同时在 index.md  说明 描述好**
+
+styles     全局 css, 放到 styles.css 统一引入打包
+
+configs    全局的一些配置, 如正则表达式等
+
+decorative  装饰器
 
 
-配置要求
-1. 静态全局 css 文件(仍会被打包,为了添加后缀之内,), 需要放到 public/style 内, 然后在 style.css 内引入
-2. 第三方依赖在 ./src/venders.ts 内引入,
-3. polyfill  在 ./src/polyfill 内引入
 
-结果
-1. stats.json  5.1m  js + css  524k
-2. stats.json  8.7m  js + css  548k
+程序 入口
 
-都能正常使用
+main.tsx      页面入口
 
-https://webpack.github.io/analyse/
+polyfills.ts   一些兼容处理的 脚本, 统一在这里引入, 
 
-和
+vendors.ts    一些 第三方依赖,全局依赖, 如: react, react-mobx 等
 
-https://alexkuz.github.io/webpack-chart/
-
-分析的 stats.json 数据显示完全一致;
+styles.ts    全局样式, 第三方样式, 不需 css-module 打包的样式, 在此文件引入
 
 
-使用 dll 会生成
-  bundle-config.json ,
-  manifest.json,
-  以及 ./public/dll 目录下的文件
-  还需要在 index.html 里面添加 ejs 模板
