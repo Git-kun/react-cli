@@ -3,3 +3,12 @@
 需要全局安装 `cross-env`
 
 
+
+  {
+                test: /\.ts$/,
+                loader: '@ngtools/webpack'
+            },
+            {
+                test: /\.html$/,
+                loader: 'raw-loader'
+            },
