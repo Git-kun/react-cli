@@ -1,20 +1,37 @@
-const webpackPath = require('./webpack.path');
-const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const webpackPath = require( './webpack.path' );
+const MiniCssExtractPlugin = require( "mini-css-extract-plugin" );
 const IS_PRODUCTION = process.env.NODE_ENV === 'production';
+const os = require( 'os' );
 
 
 module.exports = {
-  strictExportPresence: true,
-  unknownContextCritical: false,
   rules: [
     {
+      loader: 'thread-loader',
+      options: {
+        workers: os.cpus().length
+      }
+    },
+    {
       test: /\.jsx?|tsx?$/,
-      use: ['babel-loader'],
+      use: [ 'babel-loader' ],
     },
     {
       enforce: "pre",
       test: /\.js$/,
       loader: "source-map-loader"
+    },
+    {
+      test: /\.tsx?$/,
+      enforce: 'pre',
+      loader: "tslint-loader"
+    },
+    {
+      enforce: 'pre',
+      test: /\.js$/,
+      exclude: /node_modules/,
+      include: path.resolve( __dirname, '/src/js' ),
+      loader: 'eslint-loader'
     },
     {
       enforce: "pre",
@@ -26,24 +43,6 @@ module.exports = {
     //   use: [ '@svgr/webpack', 'url-loader' ],
     //   include: webpack_path.include_svg
     // },
-    {
-      test: /\.(png|jpe?g|gif|svg)(\?.*)?$/,
-      loader: 'url-loader',
-      options: {
-        limit: 10000,
-        name: webpackPath.output.image
-      },
-      include: webpackPath.include.image
-    },
-    {
-      test: /\.(woff2?|eot|ttf|otf)(\?.*)?$/,
-      loader: 'url-loader',
-      options: {
-        limit: 10000,
-        name: webpackPath.output.font
-      },
-      include: webpackPath.include.font
-    },
     {
       test: /\.module\.css$/, // css modules
       use: [
@@ -93,6 +92,51 @@ module.exports = {
       use: [
         'file-loader'
       ]
+    },
+    {
+      test: /\.(jpg|jpeg|bmp|svg|png|webp|gif)$/,
+      use:[
+        {
+          loader: 'url-loader',
+          options: {
+            limit: 8 * 1024,
+            name: webpackPath.output.image,
+          },
+        },
+        {
+          loader: 'img-loader',
+          options: {
+            plugins: [
+              require('imagemin-gifsicle')({
+                interlaced: false
+              }),
+              require('imagemin-mozjpeg')({
+                progressive: true,
+                arithmetic: false
+              }),
+              require('imagemin-pngquant')({
+                floyd: 0.5,
+                speed: 2
+              }),
+              require('imagemin-svgo')({
+                plugins: [
+                  { removeTitle: true },
+                  { convertPathData: false }
+                ]
+              })
+            ]
+          }
+        }
+      ],
+      include: webpackPath.include.image
+    },
+    {
+      exclude: /\.(js|json|less|css|jsx)$/,
+      loader: 'file-loader',
+      options: {
+        outputPath: 'media/',
+        name: '[name].[hash].[ext]'
+      }
     }
   ]
 };

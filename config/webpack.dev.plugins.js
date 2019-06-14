@@ -6,7 +6,7 @@ const webpackPath = require('./webpack.path');
 
 module.exports = [
   ///// 热加载
-  // new webpack.HotModuleReplacementPlugin(),
+  new webpack.HotModuleReplacementPlugin(),
   ///// 作用域提升
   new ModuleConcatenationPlug(),
   ///// 保持其他包的hash不会变
@@ -22,11 +22,16 @@ module.exports = [
     template: webpackPath.template.indexHtml,
     hash: true,
     minify: {
-      caseSensitive: false, //是否大小写敏感
-      collapseBooleanAttributes: true, //是否简写boolean格式的属性,
-      removeEmptyAttributes: true, //去掉空属性
-      removeComments: true, //去掉注释
-      collapseWhitespace: true //是否去除空格
+      removeComments: true,
+      collapseWhitespace: true,
+      removeRedundantAttributes: true,
+      useShortDoctype: true,
+      removeEmptyAttributes: true,
+      removeStyleLinkTypeAttributes: true,
+      keepClosingSlash: true,
+      minifyJS: true,
+      minifyCSS: true,
+      minifyURLs: true,
     }
   })
 ];

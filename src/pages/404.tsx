@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-export function NotFound() {
+export default function () {
   return (
     <div>
       <h1>404</h1>

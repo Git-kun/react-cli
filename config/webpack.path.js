@@ -6,14 +6,13 @@ module.exports = {
   entry: {
     main: path.resolve( ASSETS, 'index.tsx' ),
     styles: path.resolve( ASSETS, 'styles.ts' ),
-    rely: path.resolve( ASSETS, 'other.ts' ),
     polyfill: path.resolve( ASSETS, 'polyfill.ts' )
   },
   output: {
-    js: 'mobile/szfc/js/[name].[hash].js',
-    css: 'mobile/szfc/css/[name].[hash].css',
-    image: 'mobile/szfc/media/[name].[ext]',
-    font: 'mobile/szfc/fonts/[name].[ext]',
+    js: 'js/[name].[hash].js',
+    css: 'css/[name].[hash].css',
+    image: 'media/[name].[ext]',
+    font: 'fonts/[name].[ext]',
   },
   include: {
     css: [ path.resolve( ASSETS, 'styles' ), path.resolve( __dirname, '../node_modules' ) ],

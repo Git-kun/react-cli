@@ -6,16 +6,13 @@
  */
 
 import { createStore } from "../lib/redux";
-import { AccountDetailInfo } from "../services/account";
 
 interface props {
-  userInfo: AccountDetailInfo,
   isLogin: false,
 }
 
 const store = createStore<props>({
   initState: {
-    userInfo: null,
     isLogin: false,
   }
 });

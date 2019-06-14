@@ -7,7 +7,7 @@
 
 import * as React from 'react';
 
-export function useCoustomState<T> ( initState: T ) {
+export function useCustomState<T> ( initState: T ) {
   const [ state, setState ] = React.useState<T>( initState );
   return {
     ...state,
