@@ -1,17 +1,17 @@
-import * as React from 'react';
-import * as ReactDOM from 'react-dom';
-import Entrance from './app';
-import { AppContainer } from "react-hot-loader"
-import { GlobalProvider } from './store/store'
+import * as React from "react";
+import * as ReactDOM from "react-dom";
+import Entrance from "./app";
+import { AppContainer } from "react-hot-loader";
+import { GlobalProvider } from "./store/store";
 
-const $root = document.getElementById( 'root' );
+const $root = document.getElementById("root");
 
 // @ts-ignore
-function renderWithHotReload ( App: any ): void {
+function renderWithHotReload(App: React.SFC<{}>): void {
   ReactDOM.render(
     <AppContainer>
       <GlobalProvider>
-        <App/>
+        <App />
       </GlobalProvider>
     </AppContainer>,
     $root
@@ -19,8 +19,7 @@ function renderWithHotReload ( App: any ): void {
 }
 
 // 初始化
-renderWithHotReload( Entrance );
-
+renderWithHotReload(Entrance);
 
 // 热更新
 if (module.hot) {
